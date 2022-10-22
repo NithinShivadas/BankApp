@@ -1,0 +1,25 @@
+<app-bank-nav-bar></app-bank-nav-bar>
+<div class="mainDiv">
+    <div class="container">
+        <h2>Ap<span>Z</span>z.<span>.BaNK _De</span>poSitE</h2>
+
+        <form [formGroup]="withdrawForm">
+            <div class="userDetails">
+                <div class="inputbox">
+                    <input type="text" formControlName="Accno" placeholder="Account Number" required>
+                </div>
+                <div class="inputbox">
+                    <input type="password" formControlName="Pwrd" placeholder="Password" required>
+                </div><br>
+                <div class="inputbox">
+                    <input type="text" formControlName="Amnt" placeholder="Amount" required>
+                </div>
+            </div>
+    
+            <div class="registerBtn">
+                <button type="submit" (click)="withdraw()">WithDraw</button>
+            </div>
+        </form>
+    </div>
+</div>
+

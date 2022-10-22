@@ -1,0 +1,86 @@
+span{
+    color: brown;
+
+}
+*{
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+}
+.mainDiv{
+    display: flex;
+    height: 100vh;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background: url(../../assets/clay-banks-0f09OA343aw-unsplash.jpg) no-repeat;
+    background-size: cover;
+
+}
+.container{
+    max-width: 700px;
+    width: 70%;
+    height: 60%;
+    background-color: rgba(0, 0, 0, 0.525);
+    padding: 25px 30px;
+    border-radius: 10px;
+
+}
+.container h2{
+     font-size: 30px;
+     font-weight: 500;
+     position: relative;
+     margin: 10px;
+}
+.container h2::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 30px;
+
+}
+.container form .userDetails{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.container form .userDetails .inputbox{
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 15px;
+}
+.container form .userDetails .inputbox input{
+    color: rgba(0, 0, 0, 0.831);
+    height: 30px;
+    width: 100% ;
+    margin: 10px;
+    border-radius: 10px;
+    padding-left: 5px;
+    font-size: 15px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.container form .userDetails .inputbox input:focus,
+.container form .userDetails .inputbox input:valid{
+    border-color: brown;
+}
+button{
+    color: aliceblue;
+    background-color: brown;
+    height: 35px;
+    width: 15%;
+    border: 2px;
+    border-radius: 10px;
+    position: absolute;
+    right: 43%;
+    bottom: 25%;
+
+}
+button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+    
+    
