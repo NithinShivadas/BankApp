@@ -1,13 +1,23 @@
 <!-- <app-bank-nav-bar></app-bank-nav-bar> -->
 <div class="main">
-    <form [formGroup]="loginForm" class="logForm">
-        <h2>Ap<span>Z</span>z.<span>.BaNK</span>  _ Sign iN</h2>
-        <div class="logInForm">    
-            <input type="text" name="username" formControlName="Accno" placeholder="Account Number"><br>
-            <input type="password" name="password" formControlName="password" placeholder="Password"><br><br>
-                <button type="submit" (click)="signin()" >SiGN iN</button>  
-                
-                <p>New User<br><a routerLink="/Register">Sign Up</a></p>
-        </div>
-    </form>
+  <form [formGroup]="loginForm" class="logForm">
+    <h2>Ap<span>Z</span>z.<span>.BaNK</span> _ Sign iN</h2>
+    <div class="logInForm">
+      <input
+        type="text"
+        name="username"
+        formControlName="Accno"
+        placeholder="Account Number"
+      /><br />
+      <input
+        type="password"
+        name="password"
+        formControlName="password"
+        placeholder="Password"
+      /><br /><br />
+      <button type="submit" (click)="signin()">SiGN iN</button>
+
+      <p>New User<br /><a routerLink="/Register">Sign Up</a></p>
+    </div>
+  </form>
 </div>
