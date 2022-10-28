@@ -1,60 +1,82 @@
 <div class="mainDiv">
-    <div class="container">
-        <h2>Ap<span>Z</span>z.<span>.BaNK</span>_ Sign uP</h2>
-        <form [formGroup]="  registerForm">
-            <div class="userDetails">
-                <div class="inputbox">
-                    <input type="text" formControlName="firstName" placeholder="First Name" >
-                </div>
-                <!-- <div style="color:brown;" *ngIf="(this.  registerForm.get('firstName')?.errors) && (this.  registerForm.get('firstName')?.touched)">Enter the First Name</div> -->
-                <div class="inputbox">
-                    <input type="text" formControlName="LastName" placeholder="Last Name" >
-                </div>
-                <!-- <div style="color:brown;" *ngIf="(this.  registerForm.get('LastName')?.errors) && (this.  registerForm.get('LastName')?.touched)">Enter the Last Name</div> -->
-                <div class="inputbox">
-                    <input type="text" formControlName="Accno" placeholder="Account Number" >
-                </div>
-                <!-- <div style="color:brown;" *ngIf="(this.  registerForm.get('Accno')?.errors) && (this.  registerForm.get('Accno')?.touched)">Enter the Accno</div> -->
-                <div class="inputbox">
-                    <input type="text" formControlName="Address" placeholder="Address" >
-                </div>
-                <!-- <div style="color:brown;" *ngIf="(this.  registerForm.get('Address')?.errors) && (this.  registerForm.get('Address')?.touched)">Enter the Address</div> -->
-                <div class="inputbox">
-                    <input type="text" formControlName="Aadhar" placeholder="Aadhar Number" >
-                </div>
-                <!-- <div style="color:brown;" *ngIf="(this.  registerForm.get('Aadhar')?.errors) && (this.  registerForm.get('Aadhar')?.touched)">Enter the Aadhar</div> -->
+  <div class="container">
+    <h2>Ap<span>Z</span>z.<span>.BaNK</span>_ Sign uP</h2>
+    <form [formGroup]="registerForm">
+      <div class="userDetails">
+        <div class="inputbox">
+          <input
+            type="text"
+            formControlName="firstName"
+            placeholder="First Name"
+          />
+        </div>
+        <!-- <div style="color:brown;" *ngIf="(this.  registerForm.get('firstName')?.errors) && (this.  registerForm.get('firstName')?.touched)">Enter the First Name</div> -->
+        <div class="inputbox">
+          <input
+            type="text"
+            formControlName="LastName"
+            placeholder="Last Name"
+          />
+        </div>
+        <!-- <div style="color:brown;" *ngIf="(this.  registerForm.get('LastName')?.errors) && (this.  registerForm.get('LastName')?.touched)">Enter the Last Name</div> -->
+        <div class="inputbox">
+          <input
+            type="text"
+            formControlName="Accno"
+            placeholder="Account Number"
+          />
+        </div>
+        <!-- <div style="color:brown;" *ngIf="(this.  registerForm.get('Accno')?.errors) && (this.  registerForm.get('Accno')?.touched)">Enter the Accno</div> -->
+        <div class="inputbox">
+          <input type="text" formControlName="Address" placeholder="Address" />
+        </div>
+        <!-- <div style="color:brown;" *ngIf="(this.  registerForm.get('Address')?.errors) && (this.  registerForm.get('Address')?.touched)">Enter the Address</div> -->
+        <div class="inputbox">
+          <input
+            type="text"
+            formControlName="Aadhar"
+            placeholder="Aadhar Number"
+          />
+        </div>
+        <!-- <div style="color:brown;" *ngIf="(this.  registerForm.get('Aadhar')?.errors) && (this.  registerForm.get('Aadhar')?.touched)">Enter the Aadhar</div> -->
 
-                <div class="inputbox">
-                    <input type="text" formControlName="MobileNum" placeholder="mobile" >
-                </div>
-                <!-- <div style="color:brown;" *ngIf="(this.  registerForm.get('MobileNum')?.errors) && (this.  registerForm.get('MobileNum')?.touched)">Enter the Mobile Number</div> -->
-                  
-                <div class="inputbox">
-                    <input type="password" formControlName="Password" placeholder="Password" >
-                </div>
-                <!-- <div style="color:brown;" *ngIf="(this.  registerForm.get('Password')?.errors) && (this.  registerForm.get('Password')?.touched)">Enter the Password</div> -->
+        <div class="inputbox">
+          <input type="text" formControlName="MobileNum" placeholder="mobile" />
+        </div>
+        <!-- <div style="color:brown;" *ngIf="(this.  registerForm.get('MobileNum')?.errors) && (this.  registerForm.get('MobileNum')?.touched)">Enter the Mobile Number</div> -->
 
-                <div class="inputbox">
-                    <input type="email" formControlName="Email" placeholder="E-Mail" >
-                </div>
-                <!-- <div style="color:brown;" *ngIf="(this.  registerForm.get('Email')?.errors) && (this.  registerForm.get('Email')?.touched)">Enter the Email</div> -->
+        <div class="inputbox">
+          <input
+            type="password"
+            formControlName="Password"
+            placeholder="Password"
+          />
+        </div>
+        <!-- <div style="color:brown;" *ngIf="(this.  registerForm.get('Password')?.errors) && (this.  registerForm.get('Password')?.touched)">Enter the Password</div> -->
 
-                
-                <div class="inputbox">
-                    <input type="password" formControlName="cnfrmPassword" placeholder="Confirm Password" >
-                </div>
-                <!-- <div style="color:brown;" *ngIf="(this.  registerForm.get('cnfrmPassword')?.errors) && (this.  registerForm.get('cnfrmPassword')?.touched)">Enter the confirm Password</div> -->
+        <div class="inputbox">
+          <input type="email" formControlName="Email" placeholder="E-Mail" />
+        </div>
+        <!-- <div style="color:brown;" *ngIf="(this.  registerForm.get('Email')?.errors) && (this.  registerForm.get('Email')?.touched)">Enter the Email</div> -->
 
-                <div class="inputbox">
-                    <input type="text" formControlName="balance" placeholder="Balance" >
-                </div>
-                <!-- <div style="color:brown;" *ngIf="(this.  registerForm.get('balance')?.errors) && (this.  registerForm.get('balance')?.touched)">Enter the balance</div> -->
+        <div class="inputbox">
+          <input
+            type="password"
+            formControlName="cnfrmPassword"
+            placeholder="Confirm Password"
+          />
+        </div>
+        <!-- <div style="color:brown;" *ngIf="(this.  registerForm.get('cnfrmPassword')?.errors) && (this.  registerForm.get('cnfrmPassword')?.touched)">Enter the confirm Password</div> -->
 
-            </div>
-    
-            <div class="registerBtn">
-                <button  (click)="registerAcc()">Register</button>
-            </div>
-        </form>
-    </div>
+        <div class="inputbox">
+          <input type="text" formControlName="balance" placeholder="Balance" />
+        </div>
+        <!-- <div style="color:brown;" *ngIf="(this.  registerForm.get('balance')?.errors) && (this.  registerForm.get('balance')?.touched)">Enter the balance</div> -->
+      </div>
+
+      <div class="registerBtn">
+        <button (click)="registerAcc()">Register</button>
+      </div>
+    </form>
+  </div>
 </div>

@@ -17,6 +17,7 @@ export class WithdrawPageComponent implements OnInit {
     Amnt:['']
   })
 
+
   constructor(private fb:FormBuilder,private router:Router,private ser:ServicesService,private http:HttpClient) { }
 
   ngOnInit(): void {

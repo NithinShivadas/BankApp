@@ -1,25 +1,33 @@
+import { JsonPipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ServicesService } from 'src/services/services.service';
 
 @Component({
   selector: 'app-bank-nav-bar',
   templateUrl: './bank-nav-bar.component.html',
-  styleUrls: ['./bank-nav-bar.component.css']
+  styleUrls: ['./bank-nav-bar.component.css'],
 })
 export class BankNavBarComponent implements OnInit {
-loginPage: string|any[]|null|undefined;
+  AccountNum: any;
 
-  constructor(private router:Router) { }
+  constructor(private router: Router, private ser: ServicesService) {}
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  //------------Delete Account------------------------
+  delAccount() {
+    this.AccountNum = JSON.parse(localStorage.getItem('currentAccNo') || '');
   }
-  exit(){
-    this.router.navigateByUrl('/loginPage')
+  cancel() {
+    this.AccountNum = '';
   }
-  depos(){
-    this.router.navigateByUrl('deposite')
-  }
-  withdrw(){
-    this.router.navigateByUrl('withdraw')
+  Deleted(event: any) {
+    this.ser.DeleteAccount(event).subscribe((result: any) => {
+      if (result) {
+        alert(result.message);
+        this.router.navigateByUrl('loginPage');
+      }
+    });
   }
 }

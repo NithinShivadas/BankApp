@@ -11,6 +11,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { DepositePageComponent } from './deposite-page/deposite-page.component';
 import { WithdrawPageComponent } from './withdraw-page/withdraw-page.component';
+import { TransactionHistoryComponent } from './transaction-history/transaction-history.component';
+import { DeleteAccountComponent } from './delete-account/delete-account.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { WithdrawPageComponent } from './withdraw-page/withdraw-page.component';
     BankNavBarComponent,
     RegisterPageComponent,
     DepositePageComponent,
-    WithdrawPageComponent
+    WithdrawPageComponent,
+    TransactionHistoryComponent,
+    DeleteAccountComponent
   ],
   imports: [
     BrowserModule,

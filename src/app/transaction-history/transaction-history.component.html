@@ -1,0 +1,23 @@
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr class="bg-danger">
+        <th>No</th>
+        <th>Type</th>
+        <th>Status</th>
+        <th>Amount</th>
+        <th>Current Balance</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of dummyArray[0]; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ data.transaction_type }}</td>
+        <td>{{ data.status }}</td>
+        <td>{{ data.Amount }}</td>
+        <td>{{ data.Current_Balance }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <button routerLink="/Welcome" class="BckBtn bg-danger">Back</button>
+</div>
